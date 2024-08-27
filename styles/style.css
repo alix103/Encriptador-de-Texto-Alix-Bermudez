@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pixelify+Sans:wght@400..700&display=swap');
+
+* {
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter';
+}
+
+body {
+    background-color: #F3F5FC; 
+    color: #142D4C;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.exclamation_logo {
+    width: 16px;
+    height: 16px;
+    color: #495057;
+}
+
+.logo {
+    width: 120px;
+    height: 48px;
+    margin-top: 40px;
+    margin-left: -10px;
+}
+
+.aviso {
+    font-size: 12px;
+    width: 229px;
+    height: 18px;
+    margin-top: 350px;
+    margin-left: 150px;
+}
+
+main {
+    display: flex;
+    margin-bottom: 50px;
+    margin-left: 80px;
+}
+
+.text-area {
+    border: none;
+    color: #0A3871;
+    margin-top: 40px;
+    margin-left: 150px;
+    resize: none;
+    display: block;
+    width: 577px;
+    height: 300px;
+    background: none;
+    font-size: 32px;
+    flex-grow: 1;
+}
+
+::placeholder {color: #0A3871; text-transform: none;}
+
+.text-area:focus {
+    outline: none;
+}
+
+
+.buttons {
+    display: flex;
+    margin-top: 20px;
+    width: 680px;
+    height: 67px;
+    margin-left: 150px;
+}
+
+.cipher__button {
+    background-color: #0A3871;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: #FFFFFF;
+    cursor: pointer;
+    height: 67px;
+    width: 328px;
+    padding: 24px;
+    gap: 8px;
+}
+
+.cipher__button:hover {
+    background-color: #0e4e9c;
+}
+
+
+.decipher__button {
+    background-color: #D8DFE8;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: #0A3871;
+    cursor: pointer;
+    height: 67px;
+    margin-left: 30px;
+    width: 328px;
+}
+
+.decipher__button:hover {
+    background-color: #e9edf3;
+}
+
+.message-containter {
+    background-color: #FFFFFF;
+    width: 400px;
+    height: 860px;
+    margin-left: 70px;
+    margin-top: -51rem;
+    border-radius: 32px;
+}
+
+.message-containter .ciphered__image {
+    margin-top: 200px;
+    margin-left: 32px;
+}
+
+.message-containter .no__mensaje1 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 24px;
+    width: 336px;
+    height: 58px;
+    margin-left: 30px;
+}
+
+.message-containter .no__mensaje2 {
+    text-align: center;
+    font-size: 16px;
+    width: 336px;
+    height: 58px;
+    margin-left: 30px;
+}
+
+
+.ciphered-container  {
+    width: 336px; 
+    height: 781px; 
+    overflow: auto;
+    margin-top: 90px;
+    margin-left: 110px
+}
+
+
+.ciphered-container .ciphered__message {
+    word-wrap: break-word; 
+    white-space: pre-wrap; 
+    font-size: 24px; 
+    line-height: 1.5; 
+}
+
+
+
+.copy__button {
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: #0A3871;
+    cursor: pointer;
+    height: 67px;
+    margin-left: 30px;
+    margin-top: 755px;
+    position: absolute;
+    width: 336px;
+}
+
+.warning {
+    color: #495057;
+    font-size: 18px
+}
+
+footer {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #0A3871;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    bottom: 0;
+    left: 0;
+}
+
+footer section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.dev-container p{
+    text-align: center;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.links{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.links img {
+    display: inline-block;
+    margin: 0 10px;
+    vertical-align: middle; /* Alinea todas las imágenes verticalmente en el centro */
+    width: 30px; 
+}
+
+.links img.link {
+    width: 40px;
+}
+
+
+@media (max-width: 1391px) {
+    main {
+        display: flex;
+        margin-bottom: 50px;
+        margin-left: -50px;
+    }
+    .logo {
+        width: 120px;
+        height: 48px;
+        margin-top: 40px;
+        margin-left: 40px;
+    }
+
+    }
+
+@media (max-width: 450px) {
+    body {
+        display: block;
+    }
+    main {
+        display: block;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+        justify-content: center;
+        align-items: center;
+        flex-grow: 1;
+        padding: 20px;
+    }
+    .logo {
+        margin-left: auto; /* Elimina el margen izquierdo fijo */
+        margin-right: auto; /* Agrega margen automático a la derecha para centrar */
+        display: block;
+    }
+
+    .text-area {
+        border: none;
+        color: #0A3871;
+        margin-left: 20%;
+        margin-right: auto;
+        display: block;
+        width: 320px;
+        height: 300px;
+        background: none;
+        font-size: 20px;
+    }
+
+    .aviso {
+        margin-top: 30px;
+        margin-left: 20%;
+    }
+    
+    .buttons {
+        display: block;
+        align-items: center;
+        margin-top: 20px;
+        width: 328px;
+        margin-left: 20%;
+    }
+
+    .cipher__button {
+        margin-bottom: 3%;
+        margin-right: auto;
+    }
+    
+    .decipher__button {
+        margin-left: 0%;
+    }
+    
+    .message-containter {
+        width: 320px;
+        height: 500px;
+        margin-left: 20%;
+        margin-top: -47rem;
+        margin-right: auto;
+        border-radius: 32px;
+        margin-bottom: -20%;
+    }
+
+    .message-containter .ciphered__image {
+        display: none;
+    }
+
+    .message-containter .no__mensaje1 {
+        margin-left: -1%;
+        margin-right: auto;
+    }
+    
+    .message-containter .no__mensaje2 {
+        margin-left: -1%;
+        margin-right: auto;
+    }
+
+    .copy__button {
+        align-items: center;
+        margin-top: 100%;
+        width: 310px;
+        margin-left: 1%;
+    }
+
+    footer {
+        
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        text-align: center; /* Centra el contenido del footer */
+        margin-top: 50%;
+    }
+}

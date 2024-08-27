@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <main>
+        <section>
+            <img class="logo" src="./assets/Logo.png" alt="Alura_logo">
+            <textarea class="text-area" id="textImput" placeholder="Ingrese el texto aquí"></textarea>
+            <div class="aviso_container">
+                <p class="aviso"><img class="exclamation_logo" src="./assets/logo-exclamacion.png">Solo letras minúsculas y sin acentos</p>
+            </div>
+            <div class="buttons">
+                <button class="cipher__button"  id="showResult">Encriptar</button>
+                <button class="decipher__button" id="showDecryptedResult">Desencriptar</button>
+            </div>
+        </section>
+        <section>
+            <div class="ciphered-container">
+                <p class="ciphered__message" id="result"></p>
+            </div>
+            <div class="message-containter">
+                <img class="ciphered__image" id="cipheredImage" src="./assets/Muñeco.png" alt="imagen">
+                <p class="no__mensaje1" id="nomensaje1">Ningun mensaje fue encontrado</p>
+                <p class="no__mensaje2" id="nomensaje2">Ingresa el texto que deseas encriptar o desencriptar.</p>
+                <button class="copy__button" id="copy" hidden>Copiar</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section>
+            <div class="dev-container">
+                <p class="developer">Desarrollado por Alix Bermudez</p>
+            </div>
+            <div class="links">
+                <a href="https://www.linkedin.com/in/alix-galindo-b06bb8204/"><img class="link" src="assets/linkedln.png" alt=""></a>
+                <a href="https://github.com/alix103"><img class="git" src="assets/github.png" alt=""></a>
+                <a href="https://www.instagram.com/alixbermudez2005/"><img class="insta" src="assets/instagram.png" alt=""></a>
+            </div>
+        </section>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
